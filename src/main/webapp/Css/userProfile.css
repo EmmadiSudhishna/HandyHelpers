@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+
+        /* Your CSS styles */
+        body {
+            background-color:#c2e59c;
+            font-family: Arial, sans-serif;
+        }
+       
+        .header-section {
+            background-color:#30cfd0; /* Unique color for the header #20b2aa */
+            padding: 20px;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align the items horizontally */
+        }
+
+        .profile-image-container img {
+            width: 150px;
+            height: 150px;
+            
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .edit-icon {
+            margin-top: 10px; /* Adjust the margin between the image and the icon */
+            font-size: 20px;
+            color: #333; /* Adjust the color as needed */
+        }
+
+        .body-section {
+            background-color: #98fb98; /* Unique color for the body */
+            border-radius: 0 0 20px 20px;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            margin-top: -10px;
+            height: 60%; /* Ensure the body section occupies full height */
+        }
+
+        .body-section h2 {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .body-section p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .edit-btn a {
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .edit-btn a:hover {
+            background-color: #0056b3;
+        }
+         @keyframes glow {
+            0% { box-shadow: 0 0 15px #40e0d0; }
+            50% { box-shadow: 0 0 20px #ffdab9; }
+            100% { box-shadow: 0 0 15px #ffd700; }
+        }
+
+        /* Apply glow animation to card */
+        .card {
+            animation: glow 2s infinite alternate; /* Apply the glow animation infinitely */
+            border: 3px solid #20b2aa; /* Add a thick border with the desired color */
+        }
+    
